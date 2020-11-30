@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Waiters Availability APP</h1><br>
+    <form action="/waiters/{{waiterName}}" method="POST">
+        
+    <h1><b>welcome to the waiter Availability app</b></h1>
+    
+    <div class="checkbox">
+        
+        {{#each waitersDays}}
+        <ul><li><input type="checkbox" name="days">{{this.waiter_days}}</li></ul>
+        {{/each}}
+    </div>
+
+        <button type="submit" class="homeButton">Admin</button>
+   </form>
+</div>
